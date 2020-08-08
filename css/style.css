@@ -32,16 +32,6 @@
 /*
 styles for aboutus.html
 */
-
-.headertoaboutus{
-	padding: 70px 30px 70px 30px;
-	margin: 0px auto;
-	background: #9575CD;
-	color: floralwhite;
-}
-
-.footertoaboutus{
-	background-color: #D1C4E9;
-	margin: 0px auto;
-	padding: 20px 0px 20px 0px;
+.row-aboutus{
+	border-bottom: 1px ridge;
 }
