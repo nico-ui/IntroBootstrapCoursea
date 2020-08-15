@@ -13,12 +13,11 @@
   margin: 0px auto;
   padding: 20px 0px; }
 
-  .jumbotrom{
-  	padding: 70px 30px 70px 30px;
-  	margin: 0px auto;
-  	background: #9575CD; /*comentario*/
-  	color: floralwhite;
-  }
+.jumbotrom {
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD;
+  color: floralwhite; }
 
 address {
   font-size: 80%;
@@ -53,3 +52,12 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+
+.modal-body {
+  background: #D1C4E9; }
+  .modal-body .form-row button {
+    color: floralwhite; }

@@ -24,7 +24,7 @@ $carousel-item-height: 300px;
     @include zero-margin(20px, 0px);
 }
 
-.jumbotron {
+.jumbotrom {
     @include zero-margin(70px,30px);
     background: $background-light ;
     color:floralwhite;
@@ -71,4 +71,18 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+
+.modal-header{
+	background: $background-dark;
+	color:floralwhite;
+}
+.modal-body{
+	background: $background-pale;
+	.form-row{
+		button{
+			color:floralwhite;
+		}
+	}
 }
