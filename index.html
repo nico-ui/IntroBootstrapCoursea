@@ -97,7 +97,7 @@
               <!-- <a href="#ancla" type="button" class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true" tittle="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom">
                 Reserve Table
               </a> -->
-              <a type="button" class="btn btn-block btn-warning btn-sm">Reserve Table</a>
+              <a type="button" class="btn btn-block btn-warning btn-sm" id="btnReserveTable">Reserve Table</a>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
             <!-- button -->
             <div class="form-group row">
               <div class="offset-md-2 col-md-10">
-                <button type="button" class="btn btn-secondary btn-sm ml-auto">Cancel</button>
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" id="btnCancelReserveModal">Cancel</button>
                 <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
               </div>
             </div>
@@ -361,6 +361,16 @@
           $("#carouselButton").children("span").removeClass('fa-play');
           $("#carouselButton").children("span").addClass('fa-pause');
         }
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#btnReserveTable').click(function() {
+        $('#reservemodal').modal('show');
+      });
+      $('#btnCancelReserveModal').click(function() {
+        $('#reservemodal').modal('hide');
       });
     });
   </script>
