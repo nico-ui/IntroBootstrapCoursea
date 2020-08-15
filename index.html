@@ -33,7 +33,7 @@
         </ul>
         <!-- login -->
         <span class="navbar-text">
-          <a>
+          <a id="linkLoginModal">
             <span class="fa fa-sign-in"></span>Login</a>
         </span>
       </div>
@@ -68,7 +68,7 @@
               </div>
             </div>
             <div class="form-row">
-              <button type="button" class="btn btn-secondary btn-sm ml-auto">Cancel</button>
+              <button type="button" class="btn btn-secondary btn-sm ml-auto" id="btnCancelLoginModal">Cancel</button>
               <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
             </div>
           </form>
@@ -371,6 +371,16 @@
       });
       $('#btnCancelReserveModal').click(function() {
         $('#reservemodal').modal('hide');
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+      $('#linkLoginModal').click(function() {
+        $('#loginModal').modal('show');
+      });
+      $('#btnCancelLoginModal').click(function() {
+        $('#loginModal').modal('hide');
       });
     });
   </script>
